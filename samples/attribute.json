@@ -1,0 +1,81 @@
+[
+  {
+    "name": "id",
+    "dbType": "bigIncrements",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": true
+  },
+  {
+    "name": "code",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "admin_name",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "type",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true
+  },
+  {
+    "name": "dbtype",
+    "dbType": "text",
+    "htmlType": "textarea"
+  },
+  {
+    "name": "is_configurable",
+    "dbType": "integer",
+    "htmlType": "number"
+  },
+  {
+    "name": "is_user_defined",
+    "dbType": "integer",
+    "htmlType": "number"
+  },
+  {
+    "name": "is_visible_on_front",
+    "dbType": "integer",
+    "htmlType": "number"
+  },
+  {
+    "name": "is_required",
+    "dbType": "integer",
+    "htmlType": "number"
+  },
+  {
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  }
+]

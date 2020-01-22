@@ -1,0 +1,47 @@
+[
+    {
+        "name": "id",
+        "dbType": "bigIncrements",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "product_id",
+        "dbType": "bigInteger:unsigned:default,0:foreign,products,id",
+        "htmlType": "text",
+        "relation": "mt1,Product,product_id,id"
+    },
+    {
+        "name": "attribute_id",
+        "dbType": "bigInteger:unsigned:default,0:foreign,attributes,id",
+        "htmlType": "text",
+        "relation": "mt1,Attribute,attribute_id,id"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]
