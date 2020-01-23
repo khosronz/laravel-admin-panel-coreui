@@ -17,10 +17,10 @@
 </div>
 
 <!-- Severity Id Field -->
-<!-- <div class="form-group">
+<div class="form-group">
     {!! Form::label('severity_id', __('Severity Id').':') !!}
     <p>{!! $ticket->severity->title !!}</p>
-</div> -->
+</div>
 
 <!-- Organization Id Field -->
 <div class="form-group">

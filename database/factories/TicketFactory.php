@@ -10,7 +10,7 @@ $factory->define(Ticket::class, function (Faker $faker) {
     return [
         'title' => $faker->word,
         'status' => $faker->word,
-        // 'severity_id' => $faker->word,
+        'severity_id' => $faker->word,
         'organization_id' => $faker->word,
         'user_id' => $faker->word,
         'desc' => $faker->text,

@@ -8,6 +8,7 @@ use App\Repositories\TicketRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
+use Illuminate\Support\Facades\Auth;
 use Response;
 
 class TicketController extends AppBaseController
@@ -29,7 +30,9 @@ class TicketController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tickets = $this->ticketRepository->paginate(5);
+//        $tickets = $this->ticketRepository->find()->paginate(5);
+        $tickets = $this->ticketRepository->findByUserId(Auth::id())->paginate(5);
+
 
         return view('tickets.index')
             ->with('tickets', $tickets);

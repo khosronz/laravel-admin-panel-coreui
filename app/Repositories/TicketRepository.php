@@ -38,4 +38,12 @@ class TicketRepository extends BaseRepository
     {
         return Ticket::class;
     }
+
+
+    public function findByUserId($id)
+    {
+        $result = Ticket::where('user_id','=',$id);
+
+        return $result;
+    }
 }

@@ -34,7 +34,7 @@ class Ticket extends Model
     public $fillable = [
         'title',
         'status',
-        // 'severity_id',
+        'severity_id',
         'organization_id',
         'user_id',
         'desc'
@@ -49,7 +49,7 @@ class Ticket extends Model
         'id' => 'integer',
         'title' => 'string',
         'status' => 'string',
-        // 'severity_id' => 'integer',
+        'severity_id' => 'integer',
         'organization_id' => 'integer',
         'user_id' => 'integer',
         'desc' => 'string'

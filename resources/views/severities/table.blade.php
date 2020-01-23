@@ -1,7 +1,7 @@
 <div class="table-responsive-sm">
     <table class="table table-responsive table-bordered table-striped" id="severities-table" style="display: block;overflow-x: auto; white-space: nowrap;">
         <thead>
-            <th>@lang('Id')</th>
+        <th>@lang('Id')</th>
         <th>@lang('Title')</th>
         <th>@lang('Desc')</th>
             <th colspan="3">@lang('Action')</th>

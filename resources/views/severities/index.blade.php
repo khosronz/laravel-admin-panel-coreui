@@ -4,6 +4,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item">@lang('Severities')</li>
     </ol>
+    @include('severities.index-create')
     <div class="container-fluid">
         <div class="animated fadeIn">
              @include('flash::message')
@@ -13,11 +14,10 @@
                          <div class="card-header">
                              <i class="fa fa-align-justify ml-1"></i>
                              @lang('Severities')
-                             <a class="pull-right" href="{!! route('severities.create') !!}"><i class="fa fa-plus-square fa-lg mr-2"></i></a>
                          </div>
                          <div class="card-body">
                              @include('severities.table')
-                              <div class="pull-left mr-3" dir="ltr">
+                              <div class="pull-right mr-3">
                                      
         @include('coreui-templates::common.paginate', ['records' => $severities])
 

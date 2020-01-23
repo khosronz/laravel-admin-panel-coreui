@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class SeverityRepository
  * @package App\Repositories
- * @version January 23, 2020, 8:14 am +0330
+ * @version November 11, 2019, 4:47 pm +0330
 */
 
 class SeverityRepository extends BaseRepository

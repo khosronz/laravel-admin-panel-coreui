@@ -29,7 +29,7 @@ class SeverityController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $severities = $this->severityRepository->paginate(10);
+        $severities = $this->severityRepository->paginate(5);
 
         return view('severities.index')
             ->with('severities', $severities);

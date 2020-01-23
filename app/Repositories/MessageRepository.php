@@ -38,4 +38,11 @@ class MessageRepository extends BaseRepository
     {
         return Message::class;
     }
+
+    public function findByUserId($id)
+    {
+        $result = Message::where('user_id','=',$id);
+
+        return $result;
+    }
 }

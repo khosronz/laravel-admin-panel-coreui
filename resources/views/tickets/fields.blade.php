@@ -11,10 +11,10 @@
 </div>
 
 <!-- Severity Id Field -->
-<!-- <div class="form-group col-sm-6">
+<div class="form-group col-sm-6">
     {!! Form::label('severity_id', __('Severity Id').':') !!}
     {!! Form::select('severity_id', \App\Models\Severity::pluck('title','id') ,null, ['class' => 'form-control']) !!}
-</div> -->
+</div>
 
 <!-- Organization Id Field -->
 <div class="form-group col-sm-6">

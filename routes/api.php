@@ -17,6 +17,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return new UserResource($request->user());
 });
 
+Route::post('changeHostStatus','ZabbixDashboardAPIController@changeHostStatus');
+Route::post('gethosts/em','ZabbixDashboardAPIController@gethostsbyemail');
+Route::post('geteventsbyhost','ZabbixDashboardAPIController@geteventsbyhost');
+Route::resource('dashboards','ZabbixDashboardAPIController');
+
 Route::post('login', 'UserAPIController@login');
 Route::post('signup', 'UserAPIController@signup');
 Route::post('saveProfile/{id}', 'UserAPIController@saveProfile');
@@ -24,9 +29,30 @@ Route::resource('users', 'UserAPIController');
 
 Route::resource('roles', 'RoleAPIController');
 
+Route::resource('severities', 'SeverityAPIController');
+
+Route::get('products/{id}/attributes', 'ProductAPIController@attributes')->name('api.products.attributes');
+
+
+Route::resource('categories', 'CategoryAPIController');
+
+
+
+
+
 Route::resource('tickets', 'TicketAPIController');
 
 Route::resource('messages', 'MessageAPIController');
 
 
-Route::resource('severities', 'SeverityAPIController');
+
+
+
+
+
+
+
+
+
+
+

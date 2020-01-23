@@ -1,4 +1,3 @@
-
 <li class="nav-item {{ Request::is('organizations*') ? 'active' : '' }}">
     <a class="nav-link" href="{!! route('organizations.index') !!}">
         <i class="nav-icon icon-grid"></i>
@@ -11,10 +10,10 @@
         <span>@lang('Roles')</span>
     </a>
 </li>
-<li class="nav-item {{ Request::is('categories*') ? 'active' : '' }}">
-    <a class="nav-link" href="{!! route('categories.index') !!}">
-        <i class="nav-icon icon-folder"></i>
-        <span>@lang('Categories')</span>
+<li class="nav-item {{ Request::is('severities*') ? 'active' : '' }}">
+    <a class="nav-link" href="{!! route('severities.index') !!}">
+        <i class="nav-icon icon-layers"></i>
+        <span>@lang('Severities')</span>
     </a>
 </li>
 <li class="nav-item {{ Request::is('tickets*') ? 'active' : '' }}">
@@ -29,9 +28,9 @@
         <span>@lang('Messages')</span>
     </a>
 </li>
-<li class="nav-item {{ Request::is('severities*') ? 'active' : '' }}">
-    <a class="nav-link" href="{!! route('severities.index') !!}">
-        <i class="nav-icon icon-cursor"></i>
-        <span>@lang('Severities')</span>
-    </a>
-</li>
+
+
+
+
+
+

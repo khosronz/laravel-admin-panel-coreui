@@ -26,11 +26,33 @@ Route::resource('organizations', 'OrganizationController');
 
 Route::resource('roles', 'RoleController');
 
+Route::resource('severities', 'SeverityController');
+
+Route::get('products/{id}/attributes', 'ProductController@attributes')->name('products.attributes');
+
+
 Route::resource('categories', 'CategoryController');
+
+
+
+
 
 Route::resource('tickets', 'TicketController');
 
 Route::resource('messages', 'MessageController');
 
 
-Route::resource('severities', 'SeverityController');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
