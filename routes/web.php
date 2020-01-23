@@ -31,3 +31,6 @@ Route::resource('categories', 'CategoryController');
 Route::resource('tickets', 'TicketController');
 
 Route::resource('messages', 'MessageController');
+
+
+Route::resource('severities', 'SeverityController');

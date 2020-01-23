@@ -27,3 +27,6 @@ Route::resource('roles', 'RoleAPIController');
 Route::resource('tickets', 'TicketAPIController');
 
 Route::resource('messages', 'MessageAPIController');
+
+
+Route::resource('severities', 'SeverityAPIController');

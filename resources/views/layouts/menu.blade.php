@@ -29,3 +29,9 @@
         <span>@lang('Messages')</span>
     </a>
 </li>
+<li class="nav-item {{ Request::is('severities*') ? 'active' : '' }}">
+    <a class="nav-link" href="{!! route('severities.index') !!}">
+        <i class="nav-icon icon-cursor"></i>
+        <span>@lang('Severities')</span>
+    </a>
+</li>
